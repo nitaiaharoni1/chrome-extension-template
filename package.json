@@ -1,7 +1,7 @@
 {
-  "name": "chrome-extension-boilerplate-react-vite",
+  "name": "chrome-extension-template-react-vite",
   "version": "0.0.1",
-  "description": "chrome extension boilerplate",
+  "description": "chrome extension template",
   "license": "MIT",
   "scripts": {
     "build": "tsc --noEmit && vite build",
