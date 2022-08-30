@@ -1,0 +1,106 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:react/jsx-runtime"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 1,
+        "maxBOF": 1
+      }
+    ],
+    "object-property-newline": [
+      "error",
+      {
+        "allowAllPropertiesOnSameLine": false
+      }
+    ],
+    "max-nested-callbacks": [
+      "error",
+      4
+    ],
+    "max-params": [
+      "error",
+      3
+    ],
+    "max-statements": [
+      "error",
+      15,
+      {
+        "ignoreTopLevelFunctions": true
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "error",
+    "object-curly-newline": "off",
+    "jsx-quotes": [
+      "error",
+      "prefer-single"
+    ],
+    "react/jsx-max-depth": [
+      "error",
+      {
+        "max": 4
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "arrow-body-style": [
+      "error",
+      "always"
+    ],
+    "no-console": "off"
+  },
+  "globals": {
+    "chrome": "readonly"
+  },
+  "ignorePatterns": [
+    "watch.js",
+    "dist/**"
+  ]
+}
